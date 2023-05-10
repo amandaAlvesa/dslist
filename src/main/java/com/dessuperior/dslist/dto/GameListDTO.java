@@ -1,0 +1,29 @@
+package com.dessuperior.dslist.dto;
+
+import java.util.Objects;
+
+import com.dessuperior.dslist.entities.GameList;
+
+public class GameListDTO {
+
+	private Long id;
+	private String name;
+
+	public GameListDTO() {
+		super();
+	}
+
+	public GameListDTO(GameList entity) {
+		this.id = entity.getId();
+		this.name = entity.getName();
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+}
